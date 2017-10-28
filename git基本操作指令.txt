@@ -21,3 +21,13 @@ git 基本指令是linux指令
 
 使用git checkout -b + 名字 创建一个新的分支
 	例子: git checkout -b secondBranch
+
+	
+
+window出现warning: LF will be replaced by CRLF时的解决办法
+	rm -rf .git  // 删除.git  
+	git config --global core.autocrlf false  //禁用自动转换 
+	然后
+	git init
+	git add .  //这里的.代表仓库中的所有文件
+	
