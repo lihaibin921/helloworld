@@ -1,0 +1,23 @@
+git 基本指令是linux指令
+
+创建好仓库文件后
+
+使用git init初始化git仓库 它会在仓库文件中添加.git文件
+	我们再这之后先创建一个readme.txt文件 方式touch 或者 echo直接写
+
+使用git status查看当前版本库状态 红色文件代表未被git管理的文件
+	例子:此时readme.txt就是红色文件
+	
+使用git add + 文件名 将红色文件加入缓冲区 以便提交改变
+	例子:git add readme.txt 再使用git status查看时readme.txt变成绿色
+
+使用git commit -m "first commit"进行提交 -m后的话随便写的 主要记录本次提交主要信息
+
+使用git log查看历史提交记录  会显示提交的id 作者 日期等信息
+
+使用git branch查看此项目有哪些分支
+
+使用git checkout + 名字 切换分支(git checkout是对分支进行管理的 有很多命令 慢慢学)
+
+使用git checkout -b + 名字 创建一个新的分支
+	例子: git checkout -b secondBranch
